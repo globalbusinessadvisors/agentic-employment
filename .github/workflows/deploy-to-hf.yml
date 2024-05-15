@@ -18,8 +18,8 @@ jobs:
         pip install -r requirements.txt
 
     - name: Push to Hugging Face Space
-      run: |
-        git remote add hf https://huggingface.co/spaces/GlobalBusinessAdvisors/agentic-employment.git
-        git push hf main --force
       env:
         HF_API_TOKEN: ${{ secrets.HF_API_TOKEN }}
+      run: |
+        git remote add hf https://username:${{ secrets.HF_API_TOKEN }}@huggingface.co/spaces/GlobalBusinessAdvisors/agentic-employment.git
+        git push hf main --force
