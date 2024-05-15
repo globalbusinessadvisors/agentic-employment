@@ -21,5 +21,5 @@ jobs:
       env:
         HF_API_TOKEN: ${{ secrets.HF_API_TOKEN }}
       run: |
-        git remote add hf https://GlobalBusinessAdvisors:hf_${{ secrets.HF_API_TOKEN }}@huggingface.co/spaces/GlobalBusinessAdvisors/agentic-employment.git
+        git remote add hf https://GlobalBusinessAdvisors:${{ secrets.HF_API_TOKEN }}@huggingface.co/spaces/GlobalBusinessAdvisors/agentic-employment.git
         git push hf main --force
