@@ -19,7 +19,7 @@ jobs:
 
     - name: Push to Hugging Face Space
       run: |
-        git remote add hf https://huggingface.co/spaces/your-username/your-space-name.git
+        git remote add hf https://huggingface.co/spaces/GlobalBusinessAdvisors/agentic-employment.git
         git push hf main --force
       env:
         HF_API_TOKEN: ${{ secrets.HF_API_TOKEN }}
