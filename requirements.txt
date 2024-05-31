@@ -4,3 +4,12 @@ pandas
 plotly
 gradio
 gradio_modal
+uvicorn
+httpx
+pydantic
+supabase
+python-dotenv
+authentication
+bcrypt
+python-jose
+pyjwt
